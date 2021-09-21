@@ -11,7 +11,7 @@ class Node4 {
   }
 }
 
-class Binarytree {
+class Completetree{
   Node root;
 
   // Count the number of nodes
@@ -36,13 +36,15 @@ class Binarytree {
   }
 
   public static void main(String args[]) {
-    Binarytree tree = new Binarytree();
+    Completetree tree = new Completetree();
 
     tree.root = new Node(1);
-    tree.root.left = new Node(2);
-    tree.root.right = new Node(3);
+    tree.root.right=new Node(2);
+    
+    
+    
+    
 
-    tree.root.right.left = new Node(6);
 
     int node_count = tree.countNumNodes(tree.root);
     int index = 0;
